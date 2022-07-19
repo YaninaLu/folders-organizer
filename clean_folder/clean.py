@@ -37,7 +37,6 @@ def normalized_name(filename: str) -> str:
     """
     Normalizes the filename by replacing cyrillic symbols with latin alternatives, and unrecognized symbols with
     underscores.
-
     :return: normalized filename with extension
     """
     path = Path(filename)
@@ -51,7 +50,6 @@ def normalized_name(filename: str) -> str:
 def organize(f: str, path: str, folder_name: str) -> None:
     """
     Organizes the given file into corresponding folder depending on the file extension.
-
     :param f: path to the file
     :param path: path to the directory where the file is
     :param folder_name: name of a folder to move the file to
@@ -67,7 +65,6 @@ def organize(f: str, path: str, folder_name: str) -> None:
 def organize_archive(f: str, path: str) -> None:
     """
     Moves the archive to the "archives" directory, unpacks it into the folder and deletes the original archive.
-
     :param f: path to the archive
     :param path: path to the directory where the file is
     """
@@ -88,7 +85,6 @@ def organize_archive(f: str, path: str) -> None:
 def is_empty_dir(directory):
     """
     Checks if the directory is empty.
-
     :param directory: path to the directory
     :return: True if the directory is empty, False otherwise
     """
@@ -99,7 +95,6 @@ def sort_folder(path: str, met_extensions: set[str], unknown_extensions: set[str
     """
     Iterates recursively over folders in the given path and organizes the files found in the folders according to their
     extensions.
-
     :param path: path to the root directory
     :param met_extensions: set of extensions already found in the root
     :param unknown_extensions: set of extensions that cannot be processed by the script
