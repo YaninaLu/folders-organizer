@@ -141,7 +141,7 @@ def sort_folder(path: str, met_extensions: set[str], unknown_extensions: set[str
                 unknown_extensions.add(extension)
 
 
-def main():
+def clean_folder():
     if len(argv) != 2:
         print("You have to specify the path to the directory to organize.")
         quit()
@@ -160,4 +160,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    clean_folder()
