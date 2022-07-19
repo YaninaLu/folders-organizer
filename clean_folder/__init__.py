@@ -1,4 +1,4 @@
-from clean import clean_folder
+from clean_folder import clean
 
 
-__all__ = ["clean_folder"]
+__all__ = ["clean"]
